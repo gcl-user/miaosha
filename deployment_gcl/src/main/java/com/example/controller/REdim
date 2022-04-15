@@ -1,0 +1,5 @@
+    Exception e //其他异常处理 //获取对应异常 只保留 com.cicc.cgi.cms.路径下的错误位置 返回到 msg位置
+    以供后端查看其异常 Object[] array = Arrays.stream(e.getStackTrace()).filter((x) -> (x.getClassName().startsWith("com.cicc.cgi.cms."))).filter((x) -> !"<generated>".equals(x.getFileName())).toArray();
+
+// 面向切面编程 解说地址
+https://blog.csdn.net/weixin_45583303/article/details/118565966

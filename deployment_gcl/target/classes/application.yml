@@ -1,0 +1,6 @@
+spring:
+  # thymeleaf配置
+  thymeleaf:
+    # 关闭缓存
+    cache: false
+    content-type: text/html
